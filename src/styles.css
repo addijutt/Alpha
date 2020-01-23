@@ -415,7 +415,7 @@ body[data-nav-state="opened"] .nav-top a.close-btn {
 }
 
 .our-philosiphy {
-	background: url('../../portfolio/src/assets/banner.jpg');
+	background: url('../src/assets/banner.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	padding-top: 23rem;
