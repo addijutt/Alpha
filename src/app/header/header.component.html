@@ -1,0 +1,354 @@
+<div class="search-popup" id="search-box">
+
+    <div class="close-btn">Close</div>
+
+    <div class="overlay"></div>
+
+    <div class="popup-inner">
+
+        <form role="search" method="get" class="search-form" action="">
+
+            <div class="form-group">
+                <input type="search" id="6910" class="search-field" placeholder="Search" value="" name="s" />
+
+                <button type="submit" class="search-submit"><i class="fa fa-search"></i></button>
+
+            </div>
+
+        </form>
+
+        <!--            <input type="search" placeholder="Search" />-->
+
+        <!--            <a href="#" class="search-submit"><i class="fa fa-search"></i></a>-->
+
+    </div>
+
+</div>
+
+<div class="nav-custom">
+
+    <div class="nav-top">
+
+        <a  type="button" class="open-btn" (click)="isCollapsed = !isCollapsed"
+        [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
+
+            <span>Menu</span>
+
+        </a>
+
+     
+
+    </div>
+
+</div>
+<div class="hidden-nav" id="collapseExample" [ngbCollapse]="isCollapsed">
+
+
+
+    <div class="h-100 w-100 d-flex flex-column justify-content-center position-relative">
+
+        <video class="nav-video" autoplay muted loop>
+
+            <source src="../../assets/nav-video.mp4"
+                type="video/mp4">
+
+            Your browser does not support the video tag.
+
+        </video>
+
+        <div class="top-sec">
+
+            <a href="">
+
+                <img src="../../assets/logo.png"
+                    class="img-fluid" />
+
+            </a>
+
+            <a href="#" class="search-icon float-right"><i class="fa fa-search"></i></a>
+
+        </div>
+
+        <div class="middle-sec d-flex justify-content-between">
+
+            <div>
+
+                <div class="floating-menu-parent">
+
+                    <div class="mouseout-trigger">
+
+                        <p><a href="about-us">Who we are</a></p>
+
+                        <ul>
+
+                            <li><a href="about-us">About Us</a></li>
+
+                            <li><a href="life-at-systems">Life at Systems</a></li>
+
+                            <li><a href="company-profile">Company Profile</a></li>
+
+                            <li><a href="investor-information">Investor
+                                    Information</a></li>
+
+                            <li><a href="financials">Financials</a></li>
+
+                            <li><a href="governance">Governance</a></li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div>
+
+                <div class="floating-menu-parent">
+
+                    <div class="mouseout-trigger">
+
+                        <p><a href="expertise">Expertise</a></p>
+
+
+
+                        <ul>
+
+                            <li><a href="expertise/digital-commerce">Digital
+                                    Commerce</a></li>
+
+                            <li><a href="expertise/business-applications">Business
+                                    Applications</a></li>
+
+                            <li><a href="expertise/data-management-analytics">Data
+                                    Management & Analytics </a></li>
+
+                            <li><a href="expertise/business-process-outsourcing">Business
+                                    Process Outsourcing</a></li>
+
+                            <li><a href="expertise/cloud-engineering">Cloud Services
+                                </a></li>
+
+                            <li><a href="expertise/application-development">Application
+                                    Development </a></li>
+
+                            <li><a href="expertise/application-integration">Application
+                                    Integration </a></li>
+
+                            <li><a href="expertise/security">Security </a></li>
+
+                            <li><a href="expertise/it-infrastructure/">IT
+                                    Infrastructure </a></li>
+                            <li><a href="expertise/user-experience/">User Experience
+                                </a></li>
+
+                            <li><a href="expertise/cloud-team">Cloud Team </a></li>
+
+                            <li><a href="expertise/quality-assurance">Quality
+                                    Assurance </a></li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div>
+
+                <div class="floating-menu-parent">
+
+                    <div class="mouseout-trigger">
+
+                        <p><a href="products">Products</a></p>
+
+
+
+                        <ul>
+
+                            <li><a href="products#partnercommunication">Partner
+                                    Communication</a></li>
+
+                            <li><a href="products#middlewareconnector">Middleware
+                                    Connector</a></li>
+
+                            <li><a href="products#retailanalytics">Retail
+                                    Analytics</a></li>
+
+                            <li><a href="products#hautelogic">HauteLogic</a></li>
+
+                            <li><a href="products#syshcm">SysHCM</a></li>
+                            <li><a href="products#trips">TrIPS</a></li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div>
+
+                <div class="floating-menu-parent">
+
+                    <div class="mouseout-trigger">
+
+                        <p><a href="industries">Industries</a></p>
+
+
+
+                        <ul>
+
+                            <li><a href="industries#retail">Retail</a></li>
+
+                            <li><a href="industries#consumer-goods">CPG</a></li>
+
+                            <li><a href="industries#financial-services">Financial
+                                    Services</a></li>
+
+                            <li><a href="industries#public">Public Sector</a></li>
+
+                            <li><a
+                                    href="industries#telecommunication">Telecommunication</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div>
+
+                <div class="floating-menu-parent">
+
+                    <div class="mouseout-trigger">
+
+                        <p><a href="insights">Insights</a></p>
+
+
+
+                        <ul>
+
+                            <li><a href="insights/blogs">Blogs</a></li>
+
+                            <li><a href="insights/news">News</a></li>
+
+                            <li><a href="insights/case-studies">Case Studies</a></li>
+
+                            <li><a href="insights/research-development">Research &
+                                    Development</a></li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div>
+
+                <div class="floating-menu-parent empty">
+
+                    <div class="mouseout-trigger">
+
+                        <p><a href="careers">Careers</a></p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="bottom-sec d-flex justify-content-between align-items-end">
+
+            <ul class="left-ul float-left">
+
+                <li>
+
+                    <h4>Investor Queries</h4>
+
+                    <a href="mailto:investor_relations@systemsltd.com">investor_relations@systemsltd.com</a>
+
+                </li>
+
+                <li>
+
+                    <h4>Careers</h4>
+
+                    <a href="mailto:hiring@systemsltd.com">hiring@systemsltd.com</a>
+
+                </li>
+
+                <li>
+
+                    <h4>Sales</h4>
+
+                    <a href="mailto:sales@systemsltd.com">sales@systemsltd.com</a>
+
+                </li>
+
+            </ul>
+
+            <div class="right-sec text-right float-right">
+
+                <ul class="text-right">
+
+                    <li>Follow us</li>
+
+                    <li><a href="//facebook.com/Systemslimited/" target="_blank"><i
+                                class="fab fa-facebook-f"></i></a></li>
+
+                    <li><a href="//twitter.com/SystemsLtd" target="_blank"><i class="fab fa-twitter"></i></a>
+
+                    </li>
+
+                    <li><a href="//instagram.com/lifeatsystems/" target="_blank"><i
+                                class="fab fa-instagram"></i></a></li>
+
+                    <li><a href="//linkedin.com/company/systems-limited/" target="_blank"><i
+                                class="fab fa-linkedin"></i></a></li>
+
+                </ul>
+
+                <p>© 2019 Systems Limited. All Rights Reserved.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="nav-main">
+
+
+
+    <a href="https://www.systemsltd.com" title="Systems Ltd" rel="home">
+
+
+
+        <img src="../../assets/logo.png" class="img-fluid" />
+
+
+
+    </a>
+
+
+
+    <ul id="menu-top-left-menu" class="nav"><li id="menu-item-288" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-288"><a title="Case Studies" href="insights/case-studies/">Case Studies</a></li>
+<li id="menu-item-1181" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1181"><a title="Careers" href="careers/">Careers</a></li>
+<li id="menu-item-1182" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-462 current_page_item menu-item-1182 active"><a title="Contact Us" href="contact-us/">Contact Us</a></li>
+<li id="menu-item-21" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21"><a title="&lt;i class=&quot;fa fa-search&quot;&gt;&lt;/i&gt;" href="#"><i class="fa fa-search"></i></a></li>
+</ul>
+
+
+</div>
