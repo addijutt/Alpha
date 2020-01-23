@@ -580,7 +580,7 @@ section.ceo-message-section {
 	position: absolute;
 	height: 8rem;
 	width: 8rem;
-	background: url(../../portfolio/src/assets/play-btn.png);
+	background: url('../src/assets/play-btn.png');
 	left: 0;
 	top: 0;
 	bottom: 0;
@@ -1101,7 +1101,7 @@ section.ceo-message-section {
 	content: '';
 	width: 100%;
 	height: 5rem;
-	background: url(../../portfolio/src/assets/partners-shadow.png);
+	background: url('../src/assets/partners-shadow.png');
 	background-size: 100% auto;
 	background-position: bottom center;
 	bottom: 0;
@@ -1288,6 +1288,8 @@ section.ceo-message-section {
 }
 
 .news-item:nth-child(1) {
+	grid-row: 1;
+	grid-column: 1;
 	-ms-grid-row: 1;
 	-ms-grid-column: 1;
 }
@@ -1296,20 +1298,27 @@ section.ceo-message-section {
 	-ms-grid-row-span: 2;
 	grid-row: span 2;
 	-ms-grid-row: 1;
+	grid-column: 2;
 	-ms-grid-column: 2;
 }
 
 .news-item:nth-child(3) {
+	grid-row: 1;
+	grid-column: 3;
 	-ms-grid-row: 1;
 	-ms-grid-column: 3;
 }
 
 .news-item:nth-child(4) {
+	grid-column: 1;
+	grid-row: 2;
 	-ms-grid-row: 2;
 	-ms-grid-column: 1;
 }
 
 .news-item:nth-child(5) {
+	grid-column: 3;
+	grid-row: 1;
 	-ms-grid-row: 2;
 	-ms-grid-column: 3;
 }
@@ -3091,7 +3100,7 @@ body.inner-pages .nav-main {
 
 .notice-item a.btn-g {
 	padding: 0.5rem 2rem;
-	display: inline-block;
+	/* display: inline-block; */
 	line-height: 1.9rem;
 	color: var(--text-color) !important;
 	border-color: var(--text-color);
@@ -7844,8 +7853,8 @@ img.emoji {
     display: inline !important;
     border: none !important;
     box-shadow: none !important;
-    height: 1em !important;
-    width: 1em !important;
+    /* height: 1em !important; */
+    /* width: 1em !important; */
     margin: 0 .07em !important;
     vertical-align: -0.1em !important;
     background: none !important;
@@ -8103,7 +8112,8 @@ https://flickity.metafizzy.co
 .owl-carousel .owl-stage{
     position:relative;
     -ms-touch-action:pan-Y;
-    touch-action:manipulation;
+	touch-action:manipulation;
+	backface-visibility: hidden;
     -moz-backface-visibility:hidden
 }
 .owl-carousel .owl-stage:after{
@@ -8117,19 +8127,20 @@ https://flickity.metafizzy.co
 .owl-carousel .owl-stage-outer{
     position:relative;
     overflow:hidden;
-    -webkit-transform:translate3d(0,0,0)
+    /* -webkit-transform:translate3d(0,0,0) */
 }
-.owl-carousel .owl-item,.owl-carousel .owl-wrapper{
+/* .owl-carousel .owl-item,.owl-carousel .owl-wrapper{
     -webkit-backface-visibility:hidden;
     -moz-backface-visibility:hidden;
     -ms-backface-visibility:hidden;
     -webkit-transform:translate3d(0,0,0);
     -moz-transform:translate3d(0,0,0);
     -ms-transform:translate3d(0,0,0)
-}
+} */
 .owl-carousel .owl-item{
     min-height:1px;
-    float:left;
+	float:left;
+	backface-visibility: hidden;
     -webkit-backface-visibility:hidden;
     -webkit-touch-callout:none
 }
@@ -8228,7 +8239,8 @@ https://flickity.metafizzy.co
     margin-top:-40px;
     /* background:url(owl.video.play.png) no-repeat; */
     cursor:pointer;
-    z-index:1;
+	z-index:1;
+	backface-visibility: hidden;
     -webkit-backface-visibility:hidden;
     transition:transform .1s ease
 }
@@ -8835,7 +8847,7 @@ https://flickity.metafizzy.co
         z-index: 1;
     }
     .topsliderleft {
-        /* background: rgba(7, 61, 131,.8); */
+        background: rgba(7, 61, 131,.8);
     }
     .nav-main li:not(:last-child) {
         display: none;
@@ -10248,7 +10260,6 @@ https://flickity.metafizzy.co
         padding: 0;
     }
     .notice-item a.btn-g {
-        display: inline-block;
         float: left;
         margin: 1rem 0;
     }
