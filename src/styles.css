@@ -7355,14 +7355,14 @@ input[name="your-case-study-title"] {
 		min-height: 14rem;
 	}
 	.qa_glance .box h3 {
-    font-size: 6rem; 
-}	
+    font-size: 6rem;
+}
 .our-services ul li {
     min-height: auto;
 }
 .areas-col ul li {
     margin: 0 0 0 5rem;
-}	
+}
 }
 
 @media (min-width:1024px) {
@@ -8148,7 +8148,7 @@ https://flickity.metafizzy.co
     display:block;
     width:100%
 }
-.owl-carousel 
+.owl-carousel
 .owl-dots.disabled,.owl-carousel .owl-nav.disabled{
     display:none
 }
@@ -10304,10 +10304,64 @@ https://flickity.metafizzy.co
         height: 140vh;
     }
 }
+.about-us-section-1 {
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+  position: relative;
+  background: #f0f2f4;
+}
+.stat-item-22{
+  padding: 6rem;
+}
+.stat-item-22 i{
+  font-size: 5rem;
+  margin-bottom: 10px;
+  color: var(--orange);
+  margin-right: 25px;
+    margin-top: 8px;
+}
+.stat-item-22:hover i {
+	color: #fff;
+	-webkit-transition: .2s ease-in-out;
+	-o-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+}
+.stat-item-22:hover p {
+	color: #fff;
+	-webkit-transition: .2s ease-in-out;
+	-o-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+}
+.stat-item-22:hover h4 {
+	color: #fff;
+	-webkit-transition: .2s ease-in-out;
+	-o-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+}
+.stat-item-22 {
+  background: #fff;
+  padding: 6rem;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+  height: 100%;
+}
+.stat-item-22:hover {
+  background: var(--orange);
+  padding: 6rem;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+  height: 100%;
+  cursor: pointer;
+}
+.stat-item-22 h4 {
+  color: var(--orange);
+  font-size: 3rem;
+  font-weight: 700;
+}
 
-
-
-
-
-
-
+.stat-item-22 p {
+  color: var(--text-color);
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  margin-top: 2rem;
+}

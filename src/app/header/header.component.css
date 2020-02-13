@@ -1,3 +1,7 @@
 .show{
     display: flex;
 }
+.text-large{
+  font-size: 4rem;
+  color: #fff;
+}
