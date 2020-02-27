@@ -1,4 +1,4 @@
-<div class="search-popup" id="search-box">
+<!-- <div class="search-popup" id="search-box">
 
     <div class="close-btn">Close</div>
 
@@ -17,31 +17,34 @@
 
         </form>
 
-        <!--            <input type="search" placeholder="Search" />-->
+                   <input type="search" placeholder="Search" />
 
-        <!--            <a href="#" class="search-submit"><i class="fa fa-search"></i></a>-->
+                   <a href="#" class="search-submit"><i class="fa fa-search"></i></a>
 
     </div>
 
-</div>
+</div> -->
 
-<div class="nav-custom">
+<div class="nav-custom" (click)="toggle()">
 
     <div class="nav-top">
 
-        <a  type="button" class="open-btn" (click)="isCollapsed = !isCollapsed"
-        [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
+        <a *ngIf="!isCollapsed" type="button" class="open-btn" >
 
             <span>Menu</span>
 
         </a>
 
+        <a  *ngIf="isCollapsed" class="open-btn">
+          <span>Close</span>
 
+      </a>
 
     </div>
 
 </div>
-<div class="hidden-nav" id="collapseExample" [ngbCollapse]="isCollapsed">
+
+<div class="hidden-nav" id="collapseExample" [ngClass]="{'show': isCollapsed}">
 
 
 
@@ -58,14 +61,11 @@
 
         <div class="top-sec">
 
-            <a href="">
-
-                <img src="../../assets/logo.png"
-                    class="img-fluid" />
-
+            <a href="" class="text-large">
+      IDEAONIC
             </a>
 
-            <a href="#" class="search-icon float-right"><i class="fa fa-search"></i></a>
+            <!-- <a href="#" class="search-icon float-right"><i class="fa fa-search"></i></a> -->
 
         </div>
 
@@ -350,9 +350,9 @@
     <li id="menu-item-1182" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-462 current_page_item menu-item-1182 active">
     <a title="Contact Us" href="javascript:void(0)">Contact Us</a>
       </li>
-    <li id="menu-item-21" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21">
+    <!-- <li id="menu-item-21" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21">
     <a title="&lt;i class=&quot;fa fa-search&quot;&gt;&lt;/i&gt;" href="#"><i class="fa fa-search"></i></a>
-      </li>
+      </li> -->
 </ul>
 
 

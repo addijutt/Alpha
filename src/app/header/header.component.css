@@ -5,3 +5,11 @@
   font-size: 4rem;
   color: #fff;
 }
+.nav-main li:last-child a {
+  /* background: var(--orange); */
+  padding: 1.3rem;
+  text-align: center;
+  display: block;
+  /* width: 4rem; */
+}
+

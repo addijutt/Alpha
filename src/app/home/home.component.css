@@ -1,0 +1,29 @@
+.products-item .svg-logo{
+  text-align: center;
+}
+.products-item:hover svg g{
+  fill: white;
+}
+.the-best{
+  font-size: 3rem;
+  color: blueviolet;
+  margin-bottom: 65px;
+}
+.top-header-g {
+  height: 60rem;
+  position: relative;
+  background: black;
+  overflow: hidden;
+}
+.top-header-g img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  opacity: 0.7;
+}

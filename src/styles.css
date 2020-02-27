@@ -1471,11 +1471,11 @@ section.ceo-message-section {
 }
 
 .nav-main li:last-child a {
-	background: var(--orange);
+	/* background: var(--orange); */
 	padding: 1.3rem;
 	text-align: center;
 	display: block;
-	width: 4rem;
+	/* width: 4rem; */
 }
 
 .solutions-slider .flickity-viewport {
